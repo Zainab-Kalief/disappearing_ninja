@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    {% load staticfiles %}
+  </head>
+  <body>
+    <div>
+      {% if word == 'blue' %}
+        <img src="{% static 'ninja2_app/imgs/leonardo.jpg' %}"  alt='ninja'>
+      {% elif word == 'orange'  %}
+        <img src="{% static 'ninja2_app/imgs/michelangelo.jpg' %}"  alt='ninja'>
+      {% elif word == 'red'  %}
+        <img src="{% static 'ninja2_app/imgs/raphael.jpg' %}"  alt='ninja'>
+      {% elif word == 'purple'  %}
+        <img src="{% static 'ninja2_app/imgs/donatello.jpg' %}"  alt='ninja'>
+      {% else  %}
+        <img src="{% static 'ninja2_app/imgs/wura.jpg' %}"  alt='ninja'>
+      {% endif %}
+    </div>
+  </body>
+</html>
